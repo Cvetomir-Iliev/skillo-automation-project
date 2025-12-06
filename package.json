@@ -1,0 +1,16 @@
+{
+  "name": "skillo-automation-project",
+  "version": "1.0.0",
+  "description": "Playwright test automation suite for Skillo Social Media Platform",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "eslint": "^9.0.0"
+  }
+}
