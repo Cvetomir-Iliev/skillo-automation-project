@@ -14,12 +14,15 @@ The automation suite was built to:
 ✔ Provide a scalable testing framework using best practices (Page Object Model + Fixtures)
 
 🛠️ Technologies Used
-Tool	Purpose
-Playwright	End-to-end UI automation
-Node.js	Runtime environment
-JavaScript (ES Modules)	Test language
-Page Object Model	Scalable test architecture
-HTML Reporter / Trace Viewer	Result visualization & debugging
+
+| Tool                             | Purpose                          |
+| -------------------------------- | -------------------------------- |
+| **Playwright**                   | End-to-end UI automation         |
+| **Node.js**                      | Runtime environment              |
+| **JavaScript (ES Modules)**      | Test language                    |
+| **Page Object Model**            | Scalable test architecture       |
+| **HTML Reporter / Trace Viewer** | Result visualization & debugging |
+
 📋 Prerequisites
 
 Before running tests, make sure you have:
@@ -33,29 +36,38 @@ Installed Playwright browsers
 npm install
 npx playwright install
 
+
 🚀 Installation & Setup
+
 git clone https://github.com/<your-username>/skillo-automation-project.git
 cd skillo-automation-project
 npm install
 npx playwright install
 
 ▶️ Running Tests
+
 Run all tests
+
 npx playwright test
 
 Run tests in headed mode
+
 npx playwright test --headed
 
 Run only Chromium tests
+
 npx playwright test --project=chromium
 
 Show HTML Report after execution
+
 npx playwright show-report
 
 View trace of a failed test
+
 npx playwright show-trace <path-to-trace.zip>
 
 📁 Project Structure
+
 skillo-automation-project
 │
 ├─ pages/               → Page Object Models
@@ -83,37 +95,52 @@ skillo-automation-project
 └─ package.json
 
 🧪 Test Scenarios
+
 📝 Registration Tests
-ID	Scenario
-R-001	Register a new user with valid details
-R-002	Registration fails – missing username
-R-003	Registration fails – invalid email format
-R-004	Registration fails – short password
-R-005	Registration fails – password mismatch
-R-006	Registration fails – missing email
-R-007	Registration fails – missing password
-R-008	Registration fails – missing confirm password
+
+| ID    | Scenario                                      |
+| ----- | --------------------------------------------- |
+| R-001 | Register a new user with valid details        |
+| R-002 | Registration fails – missing username         |
+| R-003 | Registration fails – invalid email format     |
+| R-004 | Registration fails – short password           |
+| R-005 | Registration fails – password mismatch        |
+| R-006 | Registration fails – missing email            |
+| R-007 | Registration fails – missing password         |
+| R-008 | Registration fails – missing confirm password |
+
 🔐 Login Tests
-ID	Scenario
-L-001	Successful login with valid credentials
-L-002	Invalid password → visible error message
-L-003	Non-existing account → visible error message
-L-004	Login button disabled when username empty
-L-005	Login button disabled when password empty
+
+| ID    | Scenario                                     |
+| ----- | -------------------------------------------- |
+| L-001 | Successful login with valid credentials      |
+| L-002 | Invalid password → visible error message     |
+| L-003 | Non-existing account → visible error message |
+| L-004 | Login button disabled when username empty    |
+| L-005 | Login button disabled when password empty    |
+
 🚪 Logout Tests
-ID	Scenario
-O-001	Logged-in user can logout
-O-002	Cannot access Home page after logout
+
+| ID    | Scenario                             |
+| ----- | ------------------------------------ |
+| O-001 | Logged-in user can logout            |
+| O-002 | Cannot access Home page after logout |
+
 📸 New Post Tests
-ID	Scenario
-P-001	Create a new post with valid caption and image
-P-002	Post creation fails – missing caption
-P-003	Post creation fails – missing image
+
+| ID    | Scenario                                       |
+| ----- | ---------------------------------------------- |
+| P-001 | Create a new post with valid caption and image |
+| P-002 | Post creation fails – missing caption          |
+| P-003 | Post creation fails – missing image            |
+
 📊 Test Coverage
-Category	Count
-Total Test Cases	54
-Positive Tests	15
-Negative Tests	39
+
+| Category         | Count  |
+| ---------------- | ------ |
+| Total Test Cases | **54** |
+| Positive Tests   | **15** |
+| Negative Tests   | **39** |
 
 💡 Coverage includes Chromium, Firefox, and WebKit.
 
